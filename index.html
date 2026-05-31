@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 친절</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell" aria-labelledby="page-title">
+      <section class="hero">
+        <p class="eyebrow">Today’s Kindness</p>
+        <h1 id="page-title">오늘의 친절을 한 문장으로 시작해요</h1>
+        <p class="hero-copy">
+          매일 하나의 문장, 하나의 친절, 하나의 성찰로 마음의 방향을
+          다정하게 맞춰보세요.
+        </p>
+      </section>
+
+      <section class="daily-card" aria-live="polite">
+        <div class="card-header">
+          <p id="today-label">오늘</p>
+          <button id="refresh-button" type="button">다른 제안 보기</button>
+        </div>
+
+        <div class="prompt-grid">
+          <article class="prompt prompt-sentence">
+            <span class="prompt-icon" aria-hidden="true">✦</span>
+            <h2>오늘의 문장</h2>
+            <p id="sentence-text"></p>
+          </article>
+
+          <article class="prompt prompt-kindness">
+            <span class="prompt-icon" aria-hidden="true">♡</span>
+            <h2>오늘의 친절</h2>
+            <p id="kindness-text"></p>
+          </article>
+
+          <article class="prompt prompt-reflection">
+            <span class="prompt-icon" aria-hidden="true">☾</span>
+            <h2>오늘의 성찰</h2>
+            <p id="reflection-text"></p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
